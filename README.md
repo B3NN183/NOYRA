@@ -71,6 +71,39 @@ These files **force** AI to follow architectural rules:
 
 AI can't ignore these because they're loaded into every Cursor context.
 
+## 📚 Architecture Decision Records
+
+The development is documented through 12 ADRs showing evolution from initial fixes to autonomous systems:
+
+**Key ADRs:**
+- [ADR-001: Signature Validation Fix](docs/adr/001-signatur-abweichung-fix.md)
+- [ADR-003: Documentation Generation Fixes](docs/adr/003-documentation-generation-bugs.md)
+- [ADR-005: Generic Type Handling](docs/adr/005-validator-generic-simplification-tightening.md)
+- [ADR-008: Dependencies Cache](docs/adr/008-dependencies-cache-phase1.md)
+- [ADR-011: Change Tracking](docs/adr/011-module-doc-change-tracking-phase3.md)
+- [ADR-012: Git Integration](docs/adr/012-git-deletions-change-report-phase4.md)
+
+[→ View all ADRs](docs/adr/)
+
+### Evolution Pattern
+```
+ADR 001-002: Surface fixes
+    ↓
+ADR 003-004: Fundamental problems
+    ↓
+ADR 005-007: Tool understanding
+    ↓
+ADR 008-010: Architecture design
+    ↓
+ADR 011-012: Autonomous systems
+```
+
+Each ADR documents:
+- What problem occurred
+- What I tried
+- How I constrained AI to fix it
+- What I learned
+
 ### The Validation Loop
 
 **This catches AI mistakes:**
